@@ -1,0 +1,7 @@
+
+<li>{{bill.short_title}} <a href="#" {{action 'toggleModal'}}>Show Bill Details</a><br></li>
+{{#if isShowingModal}}
+{{#modal-dialog close="toggleModal" targetAttachment="center" translucentOverlay=true}}
+{{bill-detail bill=bill}}
+{{/modal-dialog}}
+{{/if}}

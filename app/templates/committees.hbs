@@ -1,6 +1,7 @@
 <h3>All Committees</h3>
 <ul>
   {{#each model as |committee|}}
-    <li>{{#link-to 'subcommittees' committee.committee_id}} {{committee.name}}{{/link-to}}</li>
+    {{committee-tile committee=committee}}
   {{/each}}
 </ul>
+{{#link-to 'index'}}Home{{/link-to}}
